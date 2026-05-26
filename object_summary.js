@@ -72,7 +72,8 @@ console.log(friends)
 
 // join 
 const realFriend = ['Rahim', ' karim ', ' fahim ', ' jahid '];
-console.log(realFriend.join('||'));
+console.log(realFriend)
+console.log(realFriend.join(''));  // o/p without comma
 
 
 // concat()
@@ -91,6 +92,68 @@ console.log("Full Name :", fullName_2)
 
 // includes
 console.log("is available B in fisrtName ? : ", firstName.includes("B"));
+
+
+
+
+
+console.log("=========| reverse a string 3 diffrent ways |=========")
+
+const sentence_2 = "I am Learning Web Development."
+
+//  Way --01
+let reverse_2 = " "
+for (const letter of sentence_2) {
+    // console.log(letter);
+    reverse_2 = letter + reverse_2;
+
+}
+console.log("Way-01 (Reverse) :", reverse_2)
+
+
+// Way -- 02
+
+let rev = ""
+for (let s = 0; s < sentence_2.length; s++) {
+    // console.log(s)
+    // console.log(sentence[s])
+    const letter = sentence[s];
+    rev = letter + rev;
+}
+console.log("Way-02 (Reverse) :", rev)
+
+
+// Way --03
+
+const reversed = sentence_2.split('').reverse().join('');
+console.log("Way-03 (Reverse) :", reversed)
+
+
+
+
+console.log("=========| Intro object properties & values |=========")
+
+// Object  (Properties: "value",)
+const bottle = {
+    brand: "Akij",
+    color: "White",
+    price: 50,
+    isClean: false,
+}
+
+const subjects = {
+    name: "Biology",
+    teacher: "Rima Mem",
+    examDate: "28 May",
+    chapters: ["First", "Second", "Third"],
+    exams: {
+        name: "Final Exam",
+        marks: 100,
+        date: "30 May"
+    }
+}
+console.log("Final Exam Marks :", subjects.exams.marks)
+
 
 
 

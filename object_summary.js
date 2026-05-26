@@ -133,6 +133,7 @@ console.log("Way-03 (Reverse) :", reversed)
 
 console.log("=========| Intro object properties & values |=========")
 
+// We can stock here different information
 // Object  (Properties: "value",)
 const bottle = {
     brand: "Akij",
@@ -157,6 +158,86 @@ console.log("Final Exam Marks :", subjects.exams.marks)
 
 
 
+console.log("=========| Multiple ways to get & set object properties |=========")
+
+const person = {
+    name: "Bayjid Alom",
+    age: 18,
+    profession: "Aspiring Jr. Web Developer",
+    salary: 0,
+    married: false,
+    "favourite places": ["Saint Martin", "Cox'sBazar"]
+}
+
+
+// Way-01 dot notation
+console.log(person)
+const income = person.salary;
+console.log("Income of the person :", income)
+
+
+// Way-02 Bracket notation
+const personAge = person["age"]
+console.log(personAge)
+console.log(person["favourite places"])
+
+
+
+// to change values:
+person.salary = 10000;
+console.log(person.salary)
+
+const keyName = 'profession';
+person[keyName] = "Aspiring Web Developer."
+console.log(person[keyName])
+
+
+
+console.log("=========| Keys, Values, nested objects & delete |=========")
+
+const computer = {
+    brand: "HP",
+    price: 55000,
+    processor: "intel",
+    HDD: "512GB"
+}
+
+
+// to get properties(keys)
+const keys = Object.keys(computer)     // keys will show
+console.log(keys)
+
+
+// to get values of the object
+const values = Object.values(computer);
+console.log(values)
+
+
+
+// Nested Object below
+
+const our_school = {
+    name: "RAUHS",
+    class: ['8', '9', '10'],
+    events: ["Science fair", "Mother Language Day"],
+    unique: {
+        color: "Blue",
+        result: {
+            GPA: 5,
+            merit: "Top"
+        }
+    }
+}
+
+console.log(our_school)
+console.log(our_school.unique.color)
+console.log(our_school.unique.result.GPA)
+
+our_school.unique.result.merit = "Top most";
+console.log(our_school)
+
+
+console.log("Events index-01 :", our_school.events[1])
 
 
 

@@ -18,3 +18,16 @@ Output:
     key: city | type:  string
     key: isStudent | type:  boolean */
 
+
+
+let myObject = {
+    name: 'John Doe',
+    age: 25,
+    city: 'Example City',
+    isStudent: true
+}
+
+let props = Object.keys(myObject)
+for(const prop of props ){
+    console.log(prop)
+}

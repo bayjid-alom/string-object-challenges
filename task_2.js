@@ -8,3 +8,15 @@ const car = {
     model: "Corolla",
     year: 2020
 };  */
+
+
+// Code below :
+
+const car = {
+    make: "Toyota",
+    model: "Corolla",
+    year: 2020,
+    "passenger capacity": 10
+}
+
+console.log(car)

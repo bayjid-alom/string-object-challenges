@@ -12,3 +12,14 @@ let student = {
 
 Output: 4 */
 
+
+let student = {
+    name: 'Ariana Grande',
+    age: 21,
+    city: 'Gaibandha',
+    isStudent: true
+}
+
+let prop = Object.keys(student).length;
+console.log("Total property :", prop)
+

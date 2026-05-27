@@ -239,6 +239,60 @@ console.log(our_school)
 
 console.log("Events index-01 :", our_school.events[1])
 
+our_school.events[1] = "Independence Day";
+console.log(our_school)
+
+
+
+
+
+
+console.log("=========| loop an object |=========")
+
+
+// Array --- for of
+// Object --- for in
+
+
+const mobile = {
+    brand: "Xiaomi",
+    price: 15000,
+    color: "Blue",
+    camera: "12MP",
+    isNew: true,
+}
+
+
+// Way --01
+for (const prop in mobile) {
+    console.log(prop)
+    console.log(mobile[prop])
+}
+
+
+// Way --02
+const keyS = Object.keys(mobile)
+for (const key of keyS) {
+    console.log(key)
+}
+
+
+
+/*
+Create New Object (4 ways)
+1. Using an object literal (most common)
+2. Using new keyword
+3. Define an object constructor. then create obects of the constructed type.
+4. Using Object.create()
+*/
+
+
+
+// repo : js-string-task
+
+
+
+
 
 
 
